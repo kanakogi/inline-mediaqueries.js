@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!--<![endif]-->
+    <title>inline-mediaqueries</title>
+  </head>
+
+  <body>
+
+    <div class="mediaqueries" data-screen='{"max767":{"width":"767px"}, "min768":{"width":"2000px"} }'>
+      Target
+    </div>
+
+    <script src="./inline-mediaqueries.js"></script>
+    <script>
+      jQuery(function($){
+        $('.mediaqueries').mediaqueries();
+      });
+    </script>
+  </body>
+
+  </html>
